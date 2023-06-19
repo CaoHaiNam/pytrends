@@ -573,8 +573,8 @@ class TrendReq(object):
         # make the request
         kw_param = quote(keyword)
         parameters = {'hl': self.hl, 'geo': self.geo}
-        print(self.hl)
-        print(TrendReq.SUGGESTIONS_URL + kw_param)
+        # print(self.hl)
+        # print(TrendReq.SUGGESTIONS_URL + kw_param)
         req_json = self._get_data(
             url=TrendReq.SUGGESTIONS_URL + kw_param,
             params=parameters,
