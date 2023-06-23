@@ -35,7 +35,7 @@ router = APIRouter()
 async def solve_1(input_request: InputRequest):
     global count
     # print(request.client.host)
-    keyword = input_request.keyword
+    keyword = input_request.keywords[0]
     try:
         output = utils.keyword_suggestion(keyword)
         return output
