@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import keyword_suggestion
+from app.routes import keyword_suggestion, keyword_ranking
 
 app = FastAPI()
 
@@ -19,3 +19,4 @@ app.add_middleware(
 app = FastAPI()
 
 app.include_router(keyword_suggestion.router)
+app.include_router(keyword_ranking.router)

@@ -1,4 +1,6 @@
 from pydantic import BaseModel
+from typing import List
 
 class InputRequest(BaseModel):
-    keyword: str
+    keywords: List[str]
+
